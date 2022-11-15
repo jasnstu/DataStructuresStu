@@ -24,6 +24,8 @@ public struct LinkedList<Value> {
         head == nil
     }
 
+    public init() { }
+
     public mutating func push(_ value: Value) {
         head = LinkedListNode(value: value, next: head)
 
