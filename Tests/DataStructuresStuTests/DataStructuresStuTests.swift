@@ -1,9 +1,3 @@
-//
-//  DataStructuresStuTests.swift
-//
-//
-//  Created by Jason Stuemke on 11/14/22.
-//
 
 import XCTest
 
