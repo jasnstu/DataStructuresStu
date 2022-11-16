@@ -1,27 +1,27 @@
 
 import Foundation
 
-struct Stack<Element> {
+public struct Stack<Element> {
 
     private var insides: [Element] = []
 
-    var isEmpty: Bool {
+    public var isEmpty: Bool {
         insides.isEmpty
     }
 
-    init(insides: [Element]) {
+    public init(insides: [Element]) {
         self.insides = insides
     }
 
-    mutating func push(_ element: Element) {
+    public mutating func push(_ element: Element) {
         insides.append(element)
     }
 
-    func peek() -> Element? {
+    public func peek() -> Element? {
         insides.last
     }
 
-    mutating func pop() -> Element? {
+    public mutating func pop() -> Element? {
         insides.popLast()
     }
 
