@@ -3,13 +3,13 @@ import Foundation
 
 public struct Stack<Element> {
 
-    private var insides: [Element] = []
+    private var insides: [Element]
 
     public var isEmpty: Bool {
         insides.isEmpty
     }
 
-    public init(insides: [Element]) {
+    public init(insides: [Element] = []) {
         self.insides = insides
     }
 
